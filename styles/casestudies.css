@@ -1,0 +1,102 @@
+#case-studies{
+    margin-top: 4rem;
+}
+.study-header{
+    text-align: center;
+}
+.study-header h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+.study-header p{
+    margin-bottom: 3rem;
+}
+.study-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+  gap: 2rem;
+}
+.study-card{
+   position: relative;
+   transition: var(--transition);
+   /* padding: 75px 0px; */
+  
+}
+.study-card:hover{
+  color: rgba(0, 51, 204, 0.8);
+}
+
+.card-desc-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 4.5rem;
+  background-color: rgba(0, 51, 204, 0.8);
+  transition: all 0.8s ease-in-out;
+  color: white;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-desc-box h6{
+  font-size: 14px;
+}
+.study-card:hover .card-desc-box{
+  opacity: 1;
+}
+.center{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-white{
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 2px;
+  
+}
+.study-card h3{
+    text-align: center;
+    
+}
+.study-card h3:hover{
+  color: rgba(0, 51, 204, 0.8);
+}
+.study-card p{
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+.study-card:hover p{
+  color:  rgba(0, 51, 204, 0.8);
+}
+.study-card p:hover{
+  color: rgba(0, 51, 204, 0.8);
+}
+.study-img{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    padding: 2rem;
+    background-color: blue;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+}
+.text-primary{
+    background: var(--primary);
+  }
+  .text-success{
+    background-color: var(--success);
+  }
+  .text-secondary{
+    background-color: var(--secondary);
+  }
+  .text-warning{
+    background-color: var(--warning);
+  }

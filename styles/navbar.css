@@ -1,0 +1,186 @@
+.navbar_container{
+    display: flex;
+    gap: 20rem;
+    align-items: center;
+    padding: 1.5rem 0;
+    justify-content: space-between;
+}
+/* #navbar{
+    top: 0;
+    margin-top: 3rem;
+} */
+
+:root{
+    --primary:         #000637;
+    --secondary:       #bbbbf2;
+    --success:         #5ed6b3;
+    --info:            #1998ff;
+    --warning:         #ffad00;
+    --danger:          #ff0000;
+    --light:           #fc7341;
+    --dark:            #221e1e;
+    --white: #fff;
+      --transition: all 400ms ease;
+      --container-width-lg:80%;
+      --container-width-md:86%;
+      --container-width-sm:90%;
+  }
+.menu-list{
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    
+   
+}
+.menu-list li{
+    font-size: 16px;
+}
+
+.navbar_container .inspect{
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    
+    padding: 0 0.5rem;
+}
+.nav-btn{
+    margin-left: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#navbar{
+    background-color: #f7f8fa;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+
+    
+}
+#navbar.sticky{
+    /* padding: 5px 0; */
+    background: #fff;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    
+}
+.navbar_container .btn{
+    background: var(--info);
+    color: var(--white);
+}
+.navbar_container .btn:hover{
+    background: transparent;
+    border: 2px solid var(--info);
+    color: var(--dark);
+}
+li a{
+    color: var(--dark);
+    transition: var(--transition);
+    
+    
+}
+.navbar_container li a:hover{
+    color: red;
+    
+}
+.icon{
+    
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+ 
+}
+.icon.cancel-btn{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+.icon.menu-btn i{
+   
+    font-size: 40px;
+    
+}
+#navbar.sticky .icon.cancel-btn{
+    top: 10px;
+  }
+
+@media screen and (max-width:868px) {
+    body.disabledScroll{
+        overflow: hidden;
+
+      }
+      .icon.cancel-btn{
+        display: none;
+        
+      }
+      .icon.cancel-btn.show{
+        display: block;
+      }
+  
+    /* .container{
+      width: var(--contaner-width-md);
+    } */
+   ul {
+        flex-direction: column;
+        border-bottom: 2rem;
+    }
+    .icon{
+        display: block;
+        height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    /* z-index: 9; */
+    }
+    .icon.hide{
+       display: none;
+    }
+  
+.navbar_container .inspect{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 230px;
+    background-color: #f7f8fa;
+    
+    display: block;
+    padding-left: 20px;
+    text-align: center;
+    transition: var(--transition);
+    
+}
+.navbar_container .inspect.active{
+    right: 0%;
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+
+
+.navbar_container li{
+    margin-top: 60px;
+} 
+
+}
+
+
+
+
+ @media screen and (max-width:600px) {
+    .container{
+        width: var(--container-width-sm);
+      }
+  
+   .icon.menu-btn{
+        position: absolute;
+        right: 40px;
+    } 
+
+    
+} 
+ 

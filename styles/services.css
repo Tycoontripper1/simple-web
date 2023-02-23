@@ -1,0 +1,113 @@
+ #services{
+    margin-top: 2rem;
+    background-color: white;
+    padding: 5rem 0 0  0;
+}
+
+.service-heading{
+    text-align: center;
+}
+
+.service-container h2{
+   font-size: 35px;
+   font-weight: 600;
+} 
+
+.service-container p{
+    color: gray;
+}
+.service-cards{
+    margin-top: 2rem;
+    display: flex;
+    gap: 4rem;
+   
+   
+}
+
+.service-card{
+    padding: 2rem 3rem 2rem 0 ;
+
+    
+}
+.service-card h3{
+    margin-bottom: 1.5rem;
+}
+.service-card p{
+    font-size: 13px;
+}
+.service-card a{
+    color: rgb(197, 167, 167);
+    font-size: 12px;
+    margin-top: 1.5rem;
+}
+/* Animatin start */
+.about-text{
+  transform: translateX(-45rem);
+  animation: card1 1s forwards ease-in;
+  transition: var(--transition);
+}
+.about-img{
+  transform: translateX(45rem);
+  animation: card1 1s forwards ease-in;
+  transition: var(--transition);
+}
+.about2-img{
+  transform: translateX(-45rem);
+  transition: var(--transition);
+  animation: card1 1s forwards ease-in;
+}
+.about-text2{
+  transform: translateX(45rem);
+  transition: var(--transition);
+  animation: card1 1s forwards ease-in;
+}
+@keyframes card1 {
+  to{
+      transform: translateX(0);
+  }
+  /* to{
+      transform: translateY(0);
+      opacity: 1;
+  } */
+  /* 0%{
+       
+      transform: translateY(-10rem);
+    }
+    100%{
+        
+        transform: translateY(0);
+    } */
+}
+/* animation end */
+
+@media screen and (max-width:1024px) {
+
+    .service-container{
+      width: var(--container-width-md);
+    }
+  
+  .service-cards{
+    margin-top: 0rem;
+  }
+  }
+  @media screen and (max-width:600px) {
+    .services-container{
+      width: var(--container-width-sm);
+    }
+    .service-cards{
+        flex-direction: column;
+        gap: 0;
+
+    }
+    .service-card{
+        padding-top: 1rem;
+    }
+  
+    section{
+      margin-bottom: 1rem;
+  
+    }
+  }
+   
+
+    
